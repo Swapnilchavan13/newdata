@@ -9,7 +9,6 @@ productRouter.get("/" , async(req , res)=>{
   res.send(product); 
 })
 
-
 productRouter.get("/:id", async (req, res) => {
     let id=req.params.id;
     id.toString()
