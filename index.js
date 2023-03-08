@@ -11,7 +11,7 @@ app.use(cors())
 
 app.use("/products" , productRouter)
 
-app.listen(process.env.PORT , async (req , res)=>{
+app.listen(8080 , async (req , res)=>{
     try{
   await connection
    console.log("connected to db")
@@ -19,5 +19,5 @@ app.listen(process.env.PORT , async (req , res)=>{
         console.log(err)
         console.log("something went wrong")
     }
-    console.log(`Running the port from ${process.env.PORT}`)
+    console.log(`Running the port from 8080`)
 })
